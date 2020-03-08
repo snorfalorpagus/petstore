@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+pytest-aiohttp = "*"
+pytest-cov = "*"
+
+[packages]
+dataclasses-jsonschema = {version = ">=1.4.1",extras = ["fast-validation"]}
+pyyaml = "*"
+connexion = {extras = ["swagger-ui"],version = "*"}
+aiohttp = "*"
+aiohttp-jinja2 = "*"
+uvloop = {version = "*",sys_platform = "!= 'win32'"}
+aiohttp-cors = "*"
+gino = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = false
